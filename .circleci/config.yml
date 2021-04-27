@@ -23,4 +23,6 @@ jobs:
           command: |
             . venv/bin/activate
             ls
-            flake8 --statistics
+            pytest -v
+          #flake8 --exclude=venv* --statistics
+            
